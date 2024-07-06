@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .services_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px; 
+            margin-top: 50px;
+        }
+        
+    </style>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c10c49eace.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="newscr.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>My Info</p>
+                <h1>Hi, I'm <span>Dhyey</span> Findoriya <br>From Rajkot, Gujarat.</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------about---------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="port.jpg" alt="User">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="Subtitle">About Me</h1>
+                    <p>Hi!!<br> I am Dhyey Findoriya. Residing in Rajkot, Gujarat.<br>I am a Sophomore at IIT Jodhpur, pursuing Electrical Engineering.<br>Passionate about technology, algorithms, statistics, developement, road trips, and cricket.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span><i class="fab fa-python"></i></span><br>Python</li>
+                            <li><span><i class="fab fa-cuttlefish"></i></span><br>C/C++</li>
+                            <li><span><i class="fab fa-html5"></i></span><br>HTML</li>
+                            <li><span><i class="fab fa-react"></i></span><br>React</li>
+                            <li><span><i class="fab fa-js"></i></span><br>JavaScript</li>
+                            <li><span><i class="fab fa-css3-alt"></i></span><br>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>Full Stack development intern</span><br>Implemented responsive UIs with React, managed server-side logic with Node.js and MongoDB, integrated secure authentication, and optimized performance while collaborating with cross-functional teams.</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Indian Institute of Technology Jodhpur (2022-2026).</li>
+                            <li><span>Senior Secondary</span><br>B.H. Rathod High School (2021-2022).</li>
+                            <li><span>Secondary</span><br>Shree K.G. Dholakiya School (2019-2020).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--------------------------------------------------------services---------------------------------------------------------->
+    <div id="interests">
+        <div class="container">
+            <h1 class="Subtitle">My Interests</h1>
+            <div class="services_list">
+                <div>
+                    <i class="material-icons">sports_cricket</i>
+                    <h2>Cricket</h2>
+                    <p>Cricket, where bat meets ball in a timeless dance of skill and strategy. Each stroke and delivery carries echoes of history, forging legends and capturing hearts with its blend of grace and competitive spirit.</p>
+                    <a href="https://www.espncricinfo.com/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cube"></i>
+                    <h2>Cubing</h2>
+                    <p>The Rubik's Cube, a colorful enigma that challenges minds and dexterity alike, where every twist and turn unveils a mosaic of possibilities and tests the bounds of logic and patience.</p>
+                    <a href="https://www.worldcubeassociation.org/">Learn more</a>
+                </div>
+                <div>
+                    <i class="material-icons">directions_bike</i>
+                    <h2>Cycling</h2>
+                    <p>Cycling is my escape into a world of effortless motion, where the rhythmic pedal strokes weave a tapestry of freedom and joy. The wind whispers through, carrying with it a sense of exhilaration and adventure, as each turn of the wheel brings me closer to the beauty of the journey ahead.</p>
+                    <a href="https://www.cyclingnews.com/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------portfolio---------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Subtitle">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Internshala Automation</h3>
+                        <p>Automated the application process for internships on Internshala using Puppeteer, saving significant time by programmatically logging in, navigating listings, and submitting applications.</p>
+                        <a href="https://github.com/dhyeyinf/Internshala-Automation"><i class="fa-brands fa-github"></i></a></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Face Identification</h3>
+                        <p>Implemented facial recognition using advanced ML models (HOG, CNN, PCA, LBP, LDA), achieving 87.7% accuracy on LFW dataset; deployed via Flask for web-based person identification from images.</p>
+                        <a href="https://github.com/dhyeyinf/Face_Identification"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Cyber-attacks on Autonomous Robotic Systems</h3>
+                        <p>Developed a secure bike rental system on Raspberry Pi, implementing encrypted OTP communication via SSH and conducted ethical penetration testing (DDoS, MitM, Phishing) to enhance system security.</p>
+                        <a href="https://github.com/dhyeyinf/Mobilty_server"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------------------------------------------------contact---------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="Subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>b22ee024@iitj.ac.in</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91-7046998416</p>
+                    <div class="social_icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dhyeyfindoriya/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dhyeyinf"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Dhyey Findoriya Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button  type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dhyey Findoriya <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName('tab_links');
+        var tabcontents= document.getElementsByClassName('tab_contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active_link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwVqSlA5zVl41LD6zeCpAO5Rt8XVwo3sACI-K0oQ-RbJYI7hxXWNd0kPPd_lnqNteDk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
